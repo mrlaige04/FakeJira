@@ -12,4 +12,19 @@ public class ProjectTask : BaseEntity
     public int AssigneeId { get; set; }
 
     public ICollection<TimeLog> TimeLogs { get; set; } = [];
+
+    public void AddLog(TimeLog timeLog)
+    {
+        TimeLogs.Add(timeLog);
+    }
+
+    public void RemoveLog(TimeLog timeLog)
+    {
+        TimeLogs.Remove(timeLog);
+    }
+
+    public void ClearLogs()
+    {
+        TimeLogs.Clear();
+    }
 }

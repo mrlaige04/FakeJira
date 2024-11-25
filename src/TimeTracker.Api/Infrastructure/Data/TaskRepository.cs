@@ -37,4 +37,9 @@ public class TaskRepository(AppDbContext context) : ITaskRepository
         context.Remove(task);
         return await context.SaveChangesAsync(cancellationToken) > 0;
     }
+
+    public IQueryable<ProjectTask> GetQuery()
+    {
+        return context.Tasks;
+    }
 }

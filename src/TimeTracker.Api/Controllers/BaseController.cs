@@ -22,16 +22,6 @@ public class BaseController : ControllerBase
             _ => StatusCodes.Status500InternalServerError
         };
 
-        var errorDetails = errors.Select(e => new
-        {
-            e.Code,
-            e.Description,
-            e.Type
-        });
-
-        return new ObjectResult(new { Message = "An unexpected error has occurred." })
-        {
-            StatusCode = statusCode
-        };
+        return Problem(statusCode: statusCode, title: errors[0].Code, detail: errors[0].Description);
     }
 }
