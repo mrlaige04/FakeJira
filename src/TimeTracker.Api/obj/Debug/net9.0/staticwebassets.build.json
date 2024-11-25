@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jdI10hI/LP+V47tE/LVinQjtHpAv5g3B6fGSrrNblvA=",
+  "Source": "TimeTracker.Api",
+  "BasePath": "_content/TimeTracker.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
