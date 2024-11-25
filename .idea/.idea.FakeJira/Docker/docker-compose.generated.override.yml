@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  timetracker.api:
+    build:
+      context: "D:\\KPI\\4course1semestr\\web_infra\\lab4"
+      dockerfile: "src/TimeTracker.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/TimeTracker.Api.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "timetracker.api:dev"
+    ports: []
+    volumes:
+    - "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api:/app:rw"
+    - "D:\\KPI\\4course1semestr\\web_infra\\lab4:/src:rw"
+    - "C:\\Users\\illia\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
