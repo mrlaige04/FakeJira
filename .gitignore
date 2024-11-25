@@ -354,6 +354,4 @@ MigrationBackup/
 **/obj/
 **/bin
 **/obj
-
-.vs/
 .vs
