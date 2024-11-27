@@ -1,12 +1,17 @@
 ﻿using ErrorOr;
+using MassTransit;
+using RabbitMQ.Client.Exceptions;
 using TimeTracker.Api.Application.Abstractions;
 using TimeTracker.Api.Application.Errors;
+using TimeTracker.Api.Application.RabbitMq;
 using TimeTracker.Api.Application.Tasks.GetTask;
 using TimeTracker.Api.Domain.Tasks;
 
 namespace TimeTracker.Api.Application.Tasks.UpdateTask;
 
-public class UpdateTaskHandler(ITaskRepository taskRepository)
+public class UpdateTaskHandler(
+    ITaskRepository taskRepository,
+    UserService userService)
     : ICommandHandler<UpdateTaskCommand, GetTaskResponse>
 {
     public async Task<ErrorOr<GetTaskResponse>> Handle(UpdateTaskCommand request, CancellationToken cancellationToken)
@@ -15,7 +20,7 @@ public class UpdateTaskHandler(ITaskRepository taskRepository)
         if (task is null)
             return Error.NotFound(TaskErrors.NotFoundTitle, TaskErrors.NotFoundDescription);
         
-        task = UpdateTask(task, request);
+        task = await UpdateTask(task, request);
         
         var updatedTask = await taskRepository.UpdateAsync(task, cancellationToken);
         return new GetTaskResponse
@@ -29,13 +34,24 @@ public class UpdateTaskHandler(ITaskRepository taskRepository)
         };
     }
 
-    private static ProjectTask UpdateTask(ProjectTask task, UpdateTaskCommand request)
+    private async Task<ProjectTask> UpdateTask(ProjectTask task, UpdateTaskCommand request)
     {
         task.Name = request.Name ?? task.Name;
         task.Description = request.Description ?? task.Description;
         task.Priority = request.Priority ?? task.Priority;
-        task.AssigneeId = request.AssigneeId ?? task.AssigneeId;
         task.Status = request.Status ?? task.Status;
+
+        if (!request.AssigneeId.HasValue) return task;
+
+        try
+        {
+            var user = await userService.GetUserAsync(request.AssigneeId.Value);
+            if (user is not null)
+                task.AssigneeId = request.AssigneeId.Value;
+        }
+        catch (BrokerUnreachableException) { }
+        catch (RequestTimeoutException) { }
+
         return task;
     }
 }

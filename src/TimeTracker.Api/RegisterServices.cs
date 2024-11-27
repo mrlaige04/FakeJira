@@ -1,5 +1,10 @@
 ﻿using System.Reflection;
+using Contracts.Configuration;
+using Contracts.Users.GetUser;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using TimeTracker.Api.Application.RabbitMq;
+using TimeTracker.Api.Application.RabbitMq.Consumers;
 using TimeTracker.Api.Domain.Tasks;
 using TimeTracker.Api.Infrastructure.Data;
 
@@ -24,5 +29,26 @@ public static class RegisterServices
         });
 
         services.AddScoped<ITaskRepository, TaskRepository>();
+
+        var rabbitMqConfiguration = configuration.GetSection("RabbitMq").Get<RabbitMqConfiguration>()!;
+        services.AddMassTransit(x =>
+        {
+            x.AddRequestClient<GetUserRequest>(timeout: TimeSpan.FromSeconds(8));
+
+            x.AddConsumer<DeleteUserConsumer>();
+            
+            x.UsingRabbitMq((context, cfg) =>
+            {
+                cfg.Host(rabbitMqConfiguration.Host, h =>
+                {
+                    h.Username(rabbitMqConfiguration.Username);
+                    h.Password(rabbitMqConfiguration.Password);
+                });
+                
+                cfg.ConfigureEndpoints(context);
+            });
+        });
+        
+        services.AddScoped<UserService>();
     }
 }

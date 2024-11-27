@@ -77,3 +77,9 @@ D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\runti
 D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\MassTransit.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\MassTransit.Abstractions.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\MassTransit.RabbitMqTransport.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\RabbitMQ.Client.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\Contracts.dll
+D:\KPI\4course1semestr\web_infra\lab4\src\TimeTracker.Api\bin\Debug\net9.0\Contracts.pdb

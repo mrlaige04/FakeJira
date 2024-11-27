@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "TimeTracker.Api/1.0.0": {
         "dependencies": {
+          "Contracts": "1.0.0",
           "ErrorOr": "2.0.1",
           "MediatR": "12.4.1",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
@@ -61,6 +62,42 @@
           "lib/net6.0/ErrorOr.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "MassTransit/8.3.2": {
+        "dependencies": {
+          "MassTransit.Abstractions": "8.3.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0"
+        },
+        "runtime": {
+          "lib/net9.0/MassTransit.dll": {
+            "assemblyVersion": "8.3.2.0",
+            "fileVersion": "8.3.2.0"
+          }
+        }
+      },
+      "MassTransit.Abstractions/8.3.2": {
+        "runtime": {
+          "lib/net9.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "8.3.2.0",
+            "fileVersion": "8.3.2.0"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/8.3.2": {
+        "dependencies": {
+          "MassTransit": "8.3.2",
+          "RabbitMQ.Client": "7.0.0"
+        },
+        "runtime": {
+          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
+            "assemblyVersion": "8.3.2.0",
+            "fileVersion": "8.3.2.0"
           }
         }
       },
@@ -244,6 +281,35 @@
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0": {},
+      "Microsoft.Extensions.Diagnostics.Abstractions/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0"
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0"
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {},
+      "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.0"
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
+        }
+      },
       "Microsoft.Extensions.Logging/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
@@ -391,6 +457,18 @@
           }
         }
       },
+      "RabbitMQ.Client/7.0.0": {
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0",
+          "System.Threading.RateLimiting": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/7.0.0": {
         "dependencies": {
           "Microsoft.OpenApi": "1.6.22"
@@ -488,6 +566,7 @@
           }
         }
       },
+      "System.IO.Pipelines/8.0.0": {},
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -581,6 +660,7 @@
         }
       },
       "System.Text.Json/9.0.0": {},
+      "System.Threading.RateLimiting/8.0.0": {},
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
@@ -598,6 +678,18 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Contracts/1.0.0": {
+        "dependencies": {
+          "MassTransit": "8.3.2",
+          "MassTransit.RabbitMQ": "8.3.2"
+        },
+        "runtime": {
+          "Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -629,6 +721,27 @@
       "sha512": "sha512-aje9lUVEAsusPFmaRcVM5EUqWBofd7hYtb9N8+ycgPYrtOzyFajMpzRgIO4uuiCllNLBc3x48+cpA+4v4koUDQ==",
       "path": "erroror/2.0.1",
       "hashPath": "erroror.2.0.1.nupkg.sha512"
+    },
+    "MassTransit/8.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-URd5UwdH8hi4gvhycTpMhQBeLXkRHGl1/h1JCW5HJVEC+kr5wDwCvUNBzaHfUxYx2xwCGUPTo5ESfMYBHeQt3Q==",
+      "path": "masstransit/8.3.2",
+      "hashPath": "masstransit.8.3.2.nupkg.sha512"
+    },
+    "MassTransit.Abstractions/8.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-26Ip8xJiu21DABFCFQkU5Lf6uoFkBzKW2PlHclxY/ATUbiZ6F89mf8QlCbdutngv5yoxWJPjFvnDaoSW3orpnA==",
+      "path": "masstransit.abstractions/8.3.2",
+      "hashPath": "masstransit.abstractions.8.3.2.nupkg.sha512"
+    },
+    "MassTransit.RabbitMQ/8.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ijj0iMtVbhRdWuLbxh8ePFE6aFr7MIzbl1YJB3eqIruiw7nZNz7Yo79Z7nkymUHQB/Sr3AmSxc3zAI3rM7BsWA==",
+      "path": "masstransit.rabbitmq/8.3.2",
+      "hashPath": "masstransit.rabbitmq.8.3.2.nupkg.sha512"
     },
     "MediatR/12.4.1": {
       "type": "package",
@@ -749,6 +862,41 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Diagnostics.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1K8P7XzuzX8W8pmXcZjcrqS6x5eSSdvhQohmcpgiQNY/HlDAlnrhR9dvlURfFz428A+RTCJpUyB+aKTA6AgVcQ==",
+      "path": "microsoft.extensions.diagnostics.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cxsK9/Dx7Ka9sfiA1nY8XlSzIaWff5FNRw0+ls8yR+aGzmnah5JGKsTHgQrehjMwGAVud/pjiUZ9MWizfUSkTQ==",
+      "path": "microsoft.extensions.diagnostics.healthchecks/9.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H1IbHm/MnUgEV0N07WrkPBIIoX7isP6IPaqUdZ3CwbMcUVDGIu+okamW28kyDRfIiZqbTbyHuNIkr4ZSHPyvDw==",
+      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.abstractions.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uK439QzYR0q2emLVtYzwyK3x+T5bTY4yWsd/k/ZUS9LR6Sflp8MIdhGXW8kQCd86dQD4tLqvcbLkku8qHY263Q==",
+      "path": "microsoft.extensions.fileproviders.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yUKJgu81ExjvqbNWqZKshBbLntZMbMVz/P7Way2SBx7bMqA08Mfdc9O7hWDKAiSp+zPUGT6LKcSCQIPeDK+CCw==",
+      "path": "microsoft.extensions.hosting.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -868,6 +1016,13 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8YJz22mOSMtkbIVuVSz2HbJwbpKwRoXQ1uqbczDUt1w1Ds8dxFs6dkV/oZ8AlTmkErZjtQelHv+oBu52ud00WA==",
+      "path": "rabbitmq.client/7.0.0",
+      "hashPath": "rabbitmq.client.7.0.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore.Swagger/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -930,6 +1085,13 @@
       "sha512": "sha512-yxGIQd3BFK7F6S62/7RdZk3C/mfwyVxvh6ngd1VYMBmbJ1YZZA9+Ku6suylVtso0FjI0wbElpJ0d27CdsyLpBQ==",
       "path": "system.identitymodel.tokens.jwt/6.35.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512"
+    },
+    "System.IO.Pipelines/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "path": "system.io.pipelines/8.0.0",
+      "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",
@@ -1036,6 +1198,13 @@
       "path": "system.text.json/9.0.0",
       "hashPath": "system.text.json.9.0.0.nupkg.sha512"
     },
+    "System.Threading.RateLimiting/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
+      "path": "system.threading.ratelimiting/8.0.0",
+      "hashPath": "system.threading.ratelimiting.8.0.0.nupkg.sha512"
+    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -1049,6 +1218,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
