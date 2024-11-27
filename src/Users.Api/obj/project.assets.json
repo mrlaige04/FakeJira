@@ -854,7 +854,6 @@
       "packagesPath": "C:\\Users\\illia\\.nuget\\packages\\",
       "outputPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Users.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "D:\\VS IDE\\SDK\\NuGetPackages"
       ],
@@ -889,7 +888,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -912,6 +911,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.100, 9.0.100]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

@@ -355,3 +355,10 @@ MigrationBackup/
 **/bin
 **/obj
 .vs
+.vs/
+./.vs
+./src/TimeTracker.Api/obj
+./src/TimeTracker.Api/obj
+./src/Users.Api/obj
+/.vs
+*.cache
