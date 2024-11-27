@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\Contracts\Contracts.csproj", "{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{301477F1-F2F9-426A-8AF9-CA0B63B0B989} = {70A563EC-6B0D-4E2A-A8BB-31FC228B4CF2}
 		{61E5692F-5412-4D30-9AAB-FE6BE559E882} = {70A563EC-6B0D-4E2A-A8BB-31FC228B4CF2}
+		{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6} = {70A563EC-6B0D-4E2A-A8BB-31FC228B4CF2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{301477F1-F2F9-426A-8AF9-CA0B63B0B989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +33,9 @@ Global
 		{61E5692F-5412-4D30-9AAB-FE6BE559E882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61E5692F-5412-4D30-9AAB-FE6BE559E882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61E5692F-5412-4D30-9AAB-FE6BE559E882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FEDEE3-CE01-4CEB-81C3-49D2F88B07A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
