@@ -32,3 +32,44 @@ D:\KPI\4course1semestr\web_infra\lab4\src\Users.Api\obj\Debug\net9.0\refint\User
 D:\KPI\4course1semestr\web_infra\lab4\src\Users.Api\obj\Debug\net9.0\Users.Api.pdb
 D:\KPI\4course1semestr\web_infra\lab4\src\Users.Api\obj\Debug\net9.0\Users.Api.genruntimeconfig.cache
 D:\KPI\4course1semestr\web_infra\lab4\src\Users.Api\obj\Debug\net9.0\ref\Users.Api.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\appsettings.Development.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\appsettings.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.staticwebassets.endpoints.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.exe
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.deps.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.runtimeconfig.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Users.Api.pdb
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\MassTransit.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\MassTransit.Abstractions.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\MassTransit.RabbitMqTransport.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\RabbitMQ.Client.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Contracts.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Contracts.pdb
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.csproj.AssemblyReference.cache
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.AssemblyInfoInputs.cache
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.AssemblyInfo.cs
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.csproj.CoreCompileInputs.cache
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.sourcelink.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\scopedcss\bundle\Users.Api.styles.css
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets.build.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets.development.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets\msbuild.Users.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets\msbuild.Users.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets\msbuild.build.Users.Api.props
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Users.Api.props
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Users.Api.props
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets.pack.json
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.csproj.Up2Date
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\refint\Users.Api.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.pdb
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.genruntimeconfig.cache
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\ref\Users.Api.dll

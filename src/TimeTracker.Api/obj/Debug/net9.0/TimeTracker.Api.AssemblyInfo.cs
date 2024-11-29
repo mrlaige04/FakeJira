@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dfce45b1-3527-4a10-8f40-ed9c373e6119")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeTracker.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e76f2d26f4c8a6d68ce097ebcc8a7670ea42e05e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+708acb529655eea270b3db952a49cdecadcf5b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("TimeTracker.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TimeTracker.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

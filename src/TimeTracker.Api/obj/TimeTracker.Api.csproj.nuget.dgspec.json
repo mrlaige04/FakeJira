@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api\\TimeTracker.Api.csproj": {}
+    "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\TimeTracker.Api\\TimeTracker.Api.csproj": {}
   },
   "projects": {
-    "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj": {
+    "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\illia\\.nuget\\packages\\",
-        "outputPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\obj\\",
+        "projectPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\vladp\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VS IDE\\SDK\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\illia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vladp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -70,12 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.100, 9.0.100]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -85,20 +79,20 @@
         }
       }
     },
-    "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api\\TimeTracker.Api.csproj": {
+    "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\TimeTracker.Api\\TimeTracker.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api\\TimeTracker.Api.csproj",
+        "projectUniqueName": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\TimeTracker.Api\\TimeTracker.Api.csproj",
         "projectName": "TimeTracker.Api",
-        "projectPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api\\TimeTracker.Api.csproj",
-        "packagesPath": "C:\\Users\\illia\\.nuget\\packages\\",
-        "outputPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\TimeTracker.Api\\obj\\",
+        "projectPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\TimeTracker.Api\\TimeTracker.Api.csproj",
+        "packagesPath": "C:\\Users\\vladp\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\TimeTracker.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VS IDE\\SDK\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\illia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vladp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -107,15 +101,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj": {
-                "projectPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj"
+              "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -128,8 +121,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -155,6 +149,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -179,12 +177,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.100, 9.0.100]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

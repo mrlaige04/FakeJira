@@ -1,4 +1,4 @@
-﻿networks:
+networks:
   timetracker_network:
 
 services:
@@ -40,15 +40,19 @@ services:
     networks:
       - timetracker_network
 
-  timetracker.new_service:
-    image: timetracker.new_service
+  users.api:
+    image: users.api
+    environment:
+      MongoDb__ConnectionString: "mongodb://mongodb:27017"
+      MongoDb__DatabaseName: "UsersDb"
     build:
-      context: ./path_to_your_new_service
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: src/Users.Api/Dockerfile
     ports:
-      - "8090:8090" 
+      - "8081:8081"
     networks:
       - timetracker_network
+
 volumes:
   sql_data:
   mongo_data:
