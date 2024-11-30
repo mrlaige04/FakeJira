@@ -18,8 +18,8 @@ public class CreateTaskHandler(
         try
         {
             var user = await userService.GetUserAsync(request.AssigneeId);
-            if (user is null)
-                return Error.Failure($"User {request.AssigneeId} does not exist");
+            if (user is null || string.IsNullOrEmpty(user.Id))
+                return Error.Validation($"User {request.AssigneeId} does not exist");
         }
         catch (Exception)
         {
