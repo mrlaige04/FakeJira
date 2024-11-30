@@ -11,7 +11,7 @@ services:
       RabbitMq__Username: "guest"
       RabbitMq__Password: "guest"
     build:
-      context: .
+      context: ..
       dockerfile: src/TimeTracker.Api/Dockerfile
     ports:
       - "8080:8080"
@@ -47,7 +47,7 @@ services:
       MongoDb__ConnectionString: "mongodb://mongodb:27017"
       MongoDb__DatabaseName: "UsersDb"
     build:
-      context: .
+      context: ..
       dockerfile: src/Users.Api/Dockerfile
     ports:
       - "8081:8081"

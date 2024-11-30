@@ -30,7 +30,6 @@ public static class RegisterServices
 
         services.AddScoped<ITaskRepository, TaskRepository>();
 
-        var rabbitMqConfiguration = configuration.GetSection("RabbitMq").Get<RabbitMqConfiguration>()!;
         services.AddMassTransit(x =>
         {
             x.AddRequestClient<GetUserRequest>(timeout: TimeSpan.FromSeconds(8));
@@ -39,10 +38,10 @@ public static class RegisterServices
             
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(rabbitMqConfiguration.Host, h =>
+                cfg.Host(configuration["RabbitMq:Host"]!, h =>
                 {
-                    h.Username(rabbitMqConfiguration.Username);
-                    h.Password(rabbitMqConfiguration.Password);
+                    h.Username(configuration["RabbitMq:Username"]!);
+                    h.Password(configuration["RabbitMq:Password"]!);
                 });
                 
                 cfg.ConfigureEndpoints(context);
