@@ -41,13 +41,13 @@ public class UpdateTaskHandler(
         task.Priority = request.Priority ?? task.Priority;
         task.Status = request.Status ?? task.Status;
 
-        if (!request.AssigneeId.HasValue) return task;
+        if (string.IsNullOrEmpty(request.AssigneeId)) return task;
 
         try
         {
-            var user = await userService.GetUserAsync(request.AssigneeId.Value);
+            var user = await userService.GetUserAsync(request.AssigneeId);
             if (user is not null)
-                task.AssigneeId = request.AssigneeId.Value;
+                task.AssigneeId = request.AssigneeId;
         }
         catch (BrokerUnreachableException) { }
         catch (RequestTimeoutException) { }

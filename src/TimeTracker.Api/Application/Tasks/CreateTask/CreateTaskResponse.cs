@@ -8,6 +8,6 @@ public class CreateTaskResponse
     public string Name { get; set; } = null!;
     public string? Description { get; set; }
     public Priority Priority { get; set; }
-    public int AssigneeId { get; set; }
+    public string AssigneeId { get; set; }
     public Status Status { get; set; }
 }

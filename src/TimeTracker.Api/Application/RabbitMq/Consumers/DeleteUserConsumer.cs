@@ -13,6 +13,6 @@ public class DeleteUserConsumer(ITaskRepository taskRepository) : IConsumer<Dele
         await queryable
             .Where(t => t.AssigneeId == context.Message.UserId)
             .ExecuteUpdateAsync(u =>
-                u.SetProperty(t => t.AssigneeId, context.Message.UserId));
+                u.SetProperty(t => t.AssigneeId, x => null));
     }
 }

@@ -2,5 +2,5 @@
 
 public class GetUserResponse
 {
-    
+    public string? Id { get; set; }
 }

@@ -5,7 +5,7 @@ namespace TimeTracker.Api.Application.RabbitMq;
 
 public class UserService(IRequestClient<GetUserRequest> requestClient)
 {
-    public async Task<GetUserResponse?> GetUserAsync(int id)
+    public async Task<GetUserResponse?> GetUserAsync(string id)
     {
         var request = new GetUserRequest { UserId = id };
         var response = await requestClient.GetResponse<GetUserResponse>(request);
