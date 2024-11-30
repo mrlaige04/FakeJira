@@ -32,7 +32,7 @@ public static class RegisterServices
 
         services.AddMassTransit(x =>
         {
-            x.AddRequestClient<GetUserRequest>(timeout: TimeSpan.FromSeconds(8));
+            x.AddRequestClient<GetUserResponse>(timeout: TimeSpan.FromSeconds(8));
 
             x.AddConsumer<DeleteUserConsumer>();
             

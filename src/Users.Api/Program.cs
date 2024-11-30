@@ -1,4 +1,8 @@
+using Contracts.Configuration;
+using Contracts.Users.GetUser;
+using MassTransit;
 using MongoDB.Driver;
+using Users.Api.RabbitMQ.Consumers;
 using Users.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +26,25 @@ builder.Services.AddSingleton(sp =>
 
 builder.Services.AddScoped<IUsersService, UsersService>();
 
+var rabbitMqConfiguration = configuration.GetSection("RabbitMq").Get<RabbitMqConfiguration>()!;
+builder.Services.AddMassTransit(x =>
+{
+    x.AddRequestClient<GetUserRequest>(timeout: TimeSpan.FromSeconds(8));
+
+    x.AddConsumer<UpdateConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(configuration["RabbitMq:Host"]!, h =>
+        {
+            h.Username(configuration["RabbitMq:Username"]!);
+            h.Password(configuration["RabbitMq:Password"]!);
+        });
+
+        cfg.ConfigureEndpoints(context);
+    });
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -29,11 +52,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
