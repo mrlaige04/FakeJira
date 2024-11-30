@@ -362,4 +362,9 @@ MigrationBackup/
 *.cache
 /.idea/.idea.FakeJira/.idea/vcs.xml
 .idea
-bin
+bin/
+obj/
+
+**/*.cache
+
+.idea/
