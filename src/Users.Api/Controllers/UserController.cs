@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Contracts.Users.DeleteUser;
+using MassTransit;
+using Microsoft.AspNetCore.Mvc;
 using Users.Api.Entities;
 using Users.Api.Services;
 
@@ -9,10 +11,12 @@ namespace Users.Api.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUsersService _usersService;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public UsersController(IUsersService usersService)
+        public UsersController(IUsersService usersService, IPublishEndpoint publishEndpoint)
         {
             _usersService = usersService;
+            _publishEndpoint = publishEndpoint;
         }
 
         [HttpGet]
@@ -78,6 +82,11 @@ namespace Users.Api.Controllers
             }
 
             await _usersService.DeleteAsync(id);
+
+            await _publishEndpoint.Publish(new DeleteUserMessage
+            {
+                UserId = existingUser.Id
+            });
 
             return NoContent();
         }

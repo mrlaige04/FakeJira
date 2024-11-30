@@ -1618,23 +1618,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vladp\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\illia\\.nuget\\packages\\": {},
+    "D:\\VS IDE\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Users.Api\\Users.Api.csproj",
+      "projectUniqueName": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Users.Api\\Users.Api.csproj",
       "projectName": "Users.Api",
-      "projectPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Users.Api\\Users.Api.csproj",
-      "packagesPath": "C:\\Users\\vladp\\.nuget\\packages\\",
-      "outputPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Users.Api\\obj\\",
+      "projectPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Users.Api\\Users.Api.csproj",
+      "packagesPath": "C:\\Users\\illia\\.nuget\\packages\\",
+      "outputPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Users.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\VS IDE\\SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vladp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\illia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1643,14 +1644,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj": {
-              "projectPath": "D:\\University\\4th course\\WEB Infra\\lab4\\FakeJira\\src\\Contracts\\Contracts.csproj"
+            "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj": {
+              "projectPath": "D:\\KPI\\4course1semestr\\web_infra\\lab4\\src\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -1664,8 +1666,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0": {
