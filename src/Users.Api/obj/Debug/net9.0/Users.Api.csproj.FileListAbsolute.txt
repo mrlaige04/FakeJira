@@ -73,3 +73,12 @@ D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\
 D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.pdb
 D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\Users.Api.genruntimeconfig.cache
 D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\obj\Debug\net9.0\ref\Users.Api.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\DnsClient.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\MongoDB.Bson.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\MongoDB.Driver.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\SharpCompress.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Snappier.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\ZstdSharp.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\University\4th course\WEB Infra\lab4\FakeJira\src\Users.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
