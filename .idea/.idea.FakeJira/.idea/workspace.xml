@@ -12,7 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4ee91ca-ae99-42fe-8760-38436ca74241" name="Changes" comment="" />
+    <list default="true" id="b4ee91ca-ae99-42fe-8760-38436ca74241" name="Changes" comment="publish delte user message">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +47,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5a20aed50c44b16b8d9a5fff97fe0c4b600/d2/1d16cfce/Success.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30ba4830728a5b61e8544331f09b2a123487346dfcf25a27b795f92f55aa69/Response.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6f937e7fde51c3ca061c59112cdd35b76a72e9ef8821ac361c6ef71e90ea88/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/KPI/4course1semestr/web_infra/lab4/src/TimeTracker.Api/obj/project.assets.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -241,6 +244,7 @@
       <workItem from="1732525744826" duration="14356000" />
       <workItem from="1732700535127" duration="4005000" />
       <workItem from="1732964693658" duration="854000" />
+      <workItem from="1732965568819" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="initial (project create)">
       <option name="closed" value="true" />
@@ -314,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732703959698</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="publish delte user message">
+      <option name="closed" value="true" />
+      <created>1732965594545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732965594545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,6 +344,7 @@
     <MESSAGE value="Logs api" />
     <MESSAGE value="rabbit mq" />
     <MESSAGE value="ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore" />
+    <MESSAGE value="publish delte user message" />
+    <option name="LAST_COMMIT_MESSAGE" value="publish delte user message" />
   </component>
 </project>

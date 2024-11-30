@@ -360,3 +360,6 @@ MigrationBackup/
 ./src/Users.Api/obj
 /.vs
 *.cache
+/.idea/.idea.FakeJira/.idea/vcs.xml
+.idea
+bin
