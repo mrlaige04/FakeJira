@@ -16,6 +16,7 @@ public class GetAllTasksTimesHandler(ITaskRepository taskRepository)
             .Include(t => t.TimeLogs)
             .Select(t => new TaskTimesResponse
             {
+                TaskId = t.Id,
                 Name = t.Name,
                 Description = t.Description,
                 Priority = t.Priority,

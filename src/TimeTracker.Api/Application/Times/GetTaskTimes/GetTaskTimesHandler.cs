@@ -24,6 +24,7 @@ public class GetTaskTimesHandler(ITaskRepository taskRepository)
 
         var result = new TaskTimesResponse
         {
+            TaskId = task.Id,
             Name = task.Name,
             Description = task.Description,
             Priority = task.Priority,
