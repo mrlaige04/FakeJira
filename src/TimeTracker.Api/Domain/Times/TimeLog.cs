@@ -9,7 +9,7 @@ public class TimeLog : BaseEntity
     public int TaskId { get; set; }
     
     public DateOnly Date { get; set; }
-    public int UserId { get; set; }
+    public string UserId { get; set; } = null!;
     
     public TimeOnly Start { get; set; }
     public TimeOnly End { get; set; }

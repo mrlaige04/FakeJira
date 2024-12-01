@@ -7,5 +7,5 @@ public class TimeLogResponse
     public DateOnly Date { get; set; }
     public TimeOnly Start { get; set; }
     public TimeOnly End { get; set; }
-    public int UserId { get; set; }
+    public string UserId { get; set; } = null!;
 }
