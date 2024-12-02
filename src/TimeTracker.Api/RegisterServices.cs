@@ -29,7 +29,8 @@ public static class RegisterServices
         });
 
         services.AddScoped<ITaskRepository, TaskRepository>();
-
+        
+        var rabbitMqConfig = configuration.GetSection("RabbitMq");
         services.AddMassTransit(x =>
         {
             x.AddRequestClient<GetUserResponse>(timeout: TimeSpan.FromSeconds(8));
@@ -38,10 +39,14 @@ public static class RegisterServices
             
             x.UsingRabbitMq((context, cfg) =>
             {
-                cfg.Host(configuration["RabbitMq:Host"]!, h =>
+                var host = rabbitMqConfig["Host"];
+                var username = rabbitMqConfig["Username"];
+                var password = rabbitMqConfig["Password"];
+
+                cfg.Host(new Uri($"rabbitmq://{host}"), h =>
                 {
-                    h.Username(configuration["RabbitMq:Username"]!);
-                    h.Password(configuration["RabbitMq:Password"]!);
+                    h.Username(username!);
+                    h.Password(password!);
                 });
                 
                 cfg.ConfigureEndpoints(context);

@@ -26,7 +26,7 @@ builder.Services.AddSingleton(sp =>
 
 builder.Services.AddScoped<IUsersService, UsersService>();
 
-var rabbitMqConfiguration = configuration.GetSection("RabbitMq").Get<RabbitMqConfiguration>()!;
+var rabbitMqConfig = configuration.GetSection("RabbitMq");
 builder.Services.AddMassTransit(x =>
 {
     x.AddRequestClient<GetUserRequest>(timeout: TimeSpan.FromSeconds(8));
@@ -35,10 +35,14 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host(configuration["RabbitMq:Host"]!, h =>
+        var host = rabbitMqConfig["Host"];
+        var username = rabbitMqConfig["Username"];
+        var password = rabbitMqConfig["Password"];
+
+        cfg.Host(new Uri($"rabbitmq://{host}"), h =>
         {
-            h.Username(configuration["RabbitMq:Username"]!);
-            h.Password(configuration["RabbitMq:Password"]!);
+            h.Username(username!);
+            h.Password(password!);
         });
 
         cfg.ConfigureEndpoints(context);
